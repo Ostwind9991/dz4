@@ -17,9 +17,8 @@ body {
 }
 
 .wrapper-header {
-    height: 48px;
     border-bottom: solid 1px #EDEDED;
-    padding: 0 30px;
+    padding: 12px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,7 +38,8 @@ body {
 
 .payment {
     border-bottom: solid 1px #EDEDED;
-    padding: 28px 0 33px 40px;
+    padding: 28px 0 33px 0;
+    margin: 0 40px;
 }
 
 .payment-title {
@@ -48,6 +48,7 @@ body {
     font-size: 12px;
     line-height: 14px;
     margin-bottom: 20px;
+    text-transform: uppercase;
 }
 
 .payment-content {
@@ -60,14 +61,16 @@ body {
     align-items: center;
 }
 
-.input-type-payment {
+.payment-radio input {
     height: 20px;
     width: 20px;
     margin-right: 10px;
 }
 
-.label-type-payment {
+
+.payment-radio label {
     margin-right: 38px;
+    font-weight: 500;
 }
 
 .main {
@@ -110,6 +113,7 @@ body {
     padding-left: 5px;
     vertical-align: middle;
     cursor: help;
+    position: absolute;
 }
 
 .input-crud-main {
@@ -117,6 +121,13 @@ body {
     background-color: #F6F6F6;
     border: 1px solid #EDEDED;
     border-radius: 6px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    color: #202124;
+    opacity: 0.3;
 }
 
 .input-crud-main:valid {
@@ -128,9 +139,10 @@ body {
     border-color: #2F75EC;
 }
 
+
+
 .content-button {
     padding: 30px 165px;
-    white-space: nowrap;
 }
 
 .button {
@@ -151,8 +163,8 @@ body {
 
 .reset:hover {
     color: #ffffff;
-    background-color: #2F75EC;
-    border: solid 2px #2F75EC;
+    background-color: #ad0909;
+    border: solid 2px #ad0909;
     border-radius: 100px;
 }
 
@@ -165,8 +177,8 @@ body {
 }
 
 .submit:hover {
-    color: #2F75EC;
-    background-color: #fff;
-    border: solid 1px #2F75EC;
+    color: #ffffff;
+    background-color: #0bfd03;
+    border: solid 1px #0bfd03;
     border-radius: 100px;
 }
