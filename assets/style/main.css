@@ -1,0 +1,172 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    color: #202124;
+}
+
+.wrapper {
+    width: 750px;
+    background-color: #fff;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.14);
+}
+
+.wrapper-header {
+    height: 48px;
+    border-bottom: solid 1px #EDEDED;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper-header-text {
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.wrapper-header-close {
+    font-size: 14px;
+    color: #D4D3D3;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.payment {
+    border-bottom: solid 1px #EDEDED;
+    padding: 28px 0 33px 40px;
+}
+
+.payment-title {
+    display: block;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 20px;
+}
+
+.payment-content {
+    display: flex;
+}
+
+.payment-radio {
+    display: flex;
+    line-height: 17px;
+    align-items: center;
+}
+
+.input-type-payment {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+
+.label-type-payment {
+    margin-right: 38px;
+}
+
+.main {
+    border-bottom: solid 1px #EDEDED;
+    padding: 29px 40px 30px 40px;
+}
+
+.crud-main {
+    display: inline-flex;
+    width: 417px;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 30px;
+}
+
+.crud-main:nth-child(2n) {
+    display: inline-flex;
+    width: 223px;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 0;
+}
+
+.crud-main:nth-child(n+3) {
+    padding-top: 30px;
+}
+
+.label-crud-main {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+/*В этом случае вставил как псевдо элемент так как нет необходимости делать tooltip, а играет чисто виуальную роль. Как вариан можно было вставить просто img*/
+.crud-main:last-child > .label-crud-main::after {
+    content: url(../upload/Question.svg);
+    padding-left: 5px;
+    vertical-align: middle;
+    cursor: help;
+}
+
+.input-crud-main {
+    height: 46px;
+    background-color: #F6F6F6;
+    border: 1px solid #EDEDED;
+    border-radius: 6px;
+}
+
+.input-crud-main:valid {
+    background: url("../upload/Check.svg") no-repeat 90% 50%/auto;
+}
+
+.input-crud-main:hover {
+    background-color: rgba(47, 117, 236, 0.04);
+    border-color: #2F75EC;
+}
+
+.content-button {
+    padding: 30px 165px;
+    white-space: nowrap;
+}
+
+.button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    width: 200px;
+    height: 49px;
+}
+
+.reset {
+    color: #2F75EC;
+    background-color: #fff;
+    border: solid 2px #2F75EC;
+    border-radius: 100px;
+}
+
+.reset:hover {
+    color: #ffffff;
+    background-color: #2F75EC;
+    border: solid 2px #2F75EC;
+    border-radius: 100px;
+}
+
+.submit {
+    color: #ffffff;
+    background-color: #2F75EC;
+    border: solid 1px #2F75EC;
+    border-radius: 100px;
+    margin-left: 20px;
+}
+
+.submit:hover {
+    color: #2F75EC;
+    background-color: #fff;
+    border: solid 1px #2F75EC;
+    border-radius: 100px;
+}
